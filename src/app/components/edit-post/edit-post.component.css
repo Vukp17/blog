@@ -1,0 +1,30 @@
+.dialog-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3f51b5;
+  }
+  
+  .dialog-content {
+    padding: 20px;
+  }
+  
+  .post-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-field {
+    margin-bottom: 20px;
+  }
+  
+  .dialog-actions {
+    justify-content: flex-end;
+  }
+  
+  .cancel-button {
+    color: #f44336;
+  }
+  
+  .save-button {
+    color: #4caf50;
+  }

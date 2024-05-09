@@ -1,0 +1,16 @@
+/* src/app/components/navbar/navbar.component.css */
+.mat-toolbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flex-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .app-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  

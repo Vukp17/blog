@@ -1,0 +1,10 @@
+<div *ngFor="let comment of comments">
+    <h3>{{ comment.content }}</h3>
+     <p>By {{ comment.author }}</p>
+    <button mat-raised-button (click)="editComment(comment)"> <mat-icon>edit</mat-icon>
+        Edit</button>
+</div>
+<hr>
+<div class="foot">
+    <button mat-raised-button color="primary" (click)="addComment(postId)">Add Comment</button>
+</div>

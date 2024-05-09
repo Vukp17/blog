@@ -1,0 +1,17 @@
+<h1 mat-dialog-title class="dialog-title">{{ data ? 'Edit Post' : 'New Post' }}</h1>
+<div mat-dialog-content class="dialog-content">
+    <form [formGroup]="postForm" class="post-form">
+        <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Title</mat-label>
+            <textarea matInput formControlName="post_title" required></textarea>
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Author</mat-label>
+            <input matInput formControlName="author" required>
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions class="dialog-actions">
+    <button mat-button (click)="onNoClick()" class="cancel-button">Cancel</button>
+    <button mat-button (click)="save()" [disabled]="!postForm.valid" class="save-button">Save</button>
+</div>
