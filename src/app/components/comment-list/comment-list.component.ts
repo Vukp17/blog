@@ -4,7 +4,7 @@ import { PostService } from '../../services/post.service';
 import { Comment } from '../../models/commnet';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
-import { EditCommentComponent } from '../edit-comment/edit-comment.component';
+import { EditCommentComponent } from './edit-comment/edit-comment.component';
 
 @Component({
   selector: 'app-comment-list',

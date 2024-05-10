@@ -2,7 +2,7 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { FormControl, Validators, FormGroup } from '@angular/forms';
-import { Comment } from '../../models/commnet';
+import { Comment } from '../../../models/commnet';
 
 @Component({
   selector: 'app-edit-comment',

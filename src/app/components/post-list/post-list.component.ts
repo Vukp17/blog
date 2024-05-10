@@ -4,7 +4,7 @@ import { PostService } from '../../services/post.service';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Post } from 'src/app/models/posts';
-import { EditPostComponent } from '../edit-post/edit-post.component';
+import { EditPostComponent } from './edit-post/edit-post.component';
 
 @Component({
   selector: 'app-post-list',
