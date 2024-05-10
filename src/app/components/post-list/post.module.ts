@@ -1,7 +1,7 @@
 // src/app/modules/post/post.module.ts
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PostListComponent } from '../../components/post-list/post-list.component';
+import { PostListComponent } from './post-list.component';
 import { RouterModule, Routes } from '@angular/router';
 import {  MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -14,7 +14,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { CommentListComponent } from 'src/app/components/comment-list/comment-list.component';
 import { PostResolver } from 'src/app/resolvers/post.resolver';
 const postRoutes: Routes = [
-  { path: '', component: PostListComponent ,resolve: { posts: PostResolver } },  // with resolver data is fethced befor the component is loaded, but this aproach is not  rendering spinner 
+  { path: '', component: PostListComponent  }, // resolve: { posts: PostResolver } // with resolver data is fethced befor the component is loaded, but this aproach is not  rendering spinner 
 ];
 
 @NgModule({
@@ -33,6 +33,6 @@ const postRoutes: Routes = [
     MatInputModule,
     MatIconModule,
     RouterModule.forChild(postRoutes), // Using router module forChild method
-  ],
+  ]
 })
 export class PostModule {}

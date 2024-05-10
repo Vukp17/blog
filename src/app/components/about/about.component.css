@@ -3,3 +3,17 @@
     margin: auto;
     margin-top: 50px;
   }
+
+  .contact-card {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
