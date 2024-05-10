@@ -74,10 +74,8 @@ export class PostListComponent implements OnInit {
   }
   toggleComments(postId: number) {
     if (this.currentPostId === postId) {
-      // Zaprite, če so že odprti
       this.currentPostId = null;
     } else {
-      // Odprite za ta post
       this.currentPostId = postId;
     }
   }

@@ -12,8 +12,9 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 
 import { CommentListComponent } from 'src/app/components/comment-list/comment-list.component';
+import { PostResolver } from 'src/app/resolvers/post.resolver';
 const postRoutes: Routes = [
-  { path: '', component: PostListComponent }, 
+  { path: '', component: PostListComponent ,resolve: { posts: PostResolver } },  // with resolver data is fethced befor the component is loaded, but this aproach is not  rendering spinner 
 ];
 
 @NgModule({
