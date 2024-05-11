@@ -65,7 +65,7 @@ export class PostService {
   }
 
   updateComment(comment: Comment): Observable<void> {
-    const index = this.comments.findIndex(c => c.id === comment.id);
+    const index = this.comments.findIndex(c => c.id === comment.id && c.post_id === comment.post_id);
     if (index !== -1) {
       this.comments[index] = comment;
     }
